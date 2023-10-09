@@ -1,0 +1,144 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.example.client_server_app.activities////PointingToDeclaration/app/com.example.client_server_app.activities/index.html
+$dokka.location:com.example.client_server_app.activities/BaseActivity///PointingToDeclaration/app/com.example.client_server_app.activities/-base-activity/index.html
+$dokka.location:com.example.client_server_app.activities/BaseActivity/BaseActivity/#/PointingToDeclaration/app/com.example.client_server_app.activities/-base-activity/-base-activity.html
+$dokka.location:com.example.client_server_app.activities/ChatActivity///PointingToDeclaration/app/com.example.client_server_app.activities/-chat-activity/index.html
+$dokka.location:com.example.client_server_app.activities/ChatActivity/ChatActivity/#/PointingToDeclaration/app/com.example.client_server_app.activities/-chat-activity/-chat-activity.html
+$dokka.location:com.example.client_server_app.activities/ChatActivity/ListenAvailabiltyOfReceiver/#/PointingToDeclaration/app/com.example.client_server_app.activities/-chat-activity/-listen-availabilty-of-receiver.html
+$dokka.location:com.example.client_server_app.activities/ChatActivity/conversionOnCompleteListener/#/PointingToDeclaration/app/com.example.client_server_app.activities/-chat-activity/conversion-on-complete-listener.html
+$dokka.location:com.example.client_server_app.activities/ChatActivity/eventListener/#/PointingToDeclaration/app/com.example.client_server_app.activities/-chat-activity/event-listener.html
+$dokka.location:com.example.client_server_app.activities/MainActivity///PointingToDeclaration/app/com.example.client_server_app.activities/-main-activity/index.html
+$dokka.location:com.example.client_server_app.activities/MainActivity/MainActivity/#/PointingToDeclaration/app/com.example.client_server_app.activities/-main-activity/-main-activity.html
+$dokka.location:com.example.client_server_app.activities/MainActivity/NotificationPermission/#/PointingToDeclaration/app/com.example.client_server_app.activities/-main-activity/-notification-permission.html
+$dokka.location:com.example.client_server_app.activities/MainActivity/OnConversionClicked/#com.example.client_server_app.models.User/PointingToDeclaration/app/com.example.client_server_app.activities/-main-activity/-on-conversion-clicked.html
+$dokka.location:com.example.client_server_app.activities/MainActivity/eventListener/#/PointingToDeclaration/app/com.example.client_server_app.activities/-main-activity/event-listener.html
+$dokka.location:com.example.client_server_app.activities/SignInActivity///PointingToDeclaration/app/com.example.client_server_app.activities/-sign-in-activity/index.html
+$dokka.location:com.example.client_server_app.activities/SignInActivity/EmailVerification/#kotlin.String#kotlin.String/PointingToDeclaration/app/com.example.client_server_app.activities/-sign-in-activity/-email-verification.html
+$dokka.location:com.example.client_server_app.activities/SignInActivity/IsVerified/#/PointingToDeclaration/app/com.example.client_server_app.activities/-sign-in-activity/-is-verified.html
+$dokka.location:com.example.client_server_app.activities/SignInActivity/SignIn/#/PointingToDeclaration/app/com.example.client_server_app.activities/-sign-in-activity/-sign-in.html
+$dokka.location:com.example.client_server_app.activities/SignInActivity/SignInActivity/#/PointingToDeclaration/app/com.example.client_server_app.activities/-sign-in-activity/-sign-in-activity.html
+$dokka.location:com.example.client_server_app.activities/SignUpActivity///PointingToDeclaration/app/com.example.client_server_app.activities/-sign-up-activity/index.html
+$dokka.location:com.example.client_server_app.activities/SignUpActivity/SignUpActivity/#/PointingToDeclaration/app/com.example.client_server_app.activities/-sign-up-activity/-sign-up-activity.html
+$dokka.location:com.example.client_server_app.activities/UsersActivity///PointingToDeclaration/app/com.example.client_server_app.activities/-users-activity/index.html
+$dokka.location:com.example.client_server_app.activities/UsersActivity/OnUserClicked/#com.example.client_server_app.models.User/PointingToDeclaration/app/com.example.client_server_app.activities/-users-activity/-on-user-clicked.html
+$dokka.location:com.example.client_server_app.activities/UsersActivity/Search/#/PointingToDeclaration/app/com.example.client_server_app.activities/-users-activity/-search.html
+$dokka.location:com.example.client_server_app.activities/UsersActivity/UsersActivity/#/PointingToDeclaration/app/com.example.client_server_app.activities/-users-activity/-users-activity.html
+$dokka.location:com.example.client_server_app.activities/UsersActivity/filter/#kotlin.String/PointingToDeclaration/app/com.example.client_server_app.activities/-users-activity/filter.html
+$dokka.location:com.example.client_server_app.adapters////PointingToDeclaration/app/com.example.client_server_app.adapters/index.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter.ReceiverMessageViewHolder///PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/-receiver-message-view-holder/index.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter.ReceiverMessageViewHolder/ReceiverMessageViewHolder/#[Error type: Unresolved type for ItemContainerReceivedMessageBinding]/PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/-receiver-message-view-holder/-receiver-message-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter.ReceiverMessageViewHolder/ReceiverMessageViewHolder/#android.view.View/PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/-receiver-message-view-holder/-receiver-message-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter.ReceiverMessageViewHolder/SetData/#com.example.client_server_app.models.ChatMessage#android.graphics.Bitmap?/PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/-receiver-message-view-holder/-set-data.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter.SentMessageViewHolder///PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/-sent-message-view-holder/index.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter.SentMessageViewHolder/SentMessageViewHolder/#[Error type: Unresolved type for ItemContainerSentMessageBinding]/PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/-sent-message-view-holder/-sent-message-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter.SentMessageViewHolder/SentMessageViewHolder/#android.view.View/PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/-sent-message-view-holder/-sent-message-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter.SentMessageViewHolder/SetData/#com.example.client_server_app.models.ChatMessage/PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/-sent-message-view-holder/-set-data.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter///PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/index.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter/ChatAdapter/#android.graphics.Bitmap?#kotlin.collections.List[com.example.client_server_app.models.ChatMessage]#kotlin.String/PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/-chat-adapter.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter/SetReceiverProfileImage/#android.graphics.Bitmap/PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/-set-receiver-profile-image.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter/getItemCount/#/PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/get-item-count.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter/getItemViewType/#kotlin.Int/PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/get-item-view-type.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter/onBindViewHolder/#androidx.recyclerview.widget.RecyclerView.ViewHolder#kotlin.Int/PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/on-bind-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/ChatAdapter/onCreateViewHolder/#android.view.ViewGroup#kotlin.Int/PointingToDeclaration/app/com.example.client_server_app.adapters/-chat-adapter/on-create-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/RecentConversationsAdapter.ConversionViewHolder///PointingToDeclaration/app/com.example.client_server_app.adapters/-recent-conversations-adapter/-conversion-view-holder/index.html
+$dokka.location:com.example.client_server_app.adapters/RecentConversationsAdapter.ConversionViewHolder/ConversionViewHolder/#[Error type: Unresolved type for ItemContainerRecentConversionBinding]/PointingToDeclaration/app/com.example.client_server_app.adapters/-recent-conversations-adapter/-conversion-view-holder/-conversion-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/RecentConversationsAdapter.ConversionViewHolder/ConversionViewHolder/#android.view.View/PointingToDeclaration/app/com.example.client_server_app.adapters/-recent-conversations-adapter/-conversion-view-holder/-conversion-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/RecentConversationsAdapter.ConversionViewHolder/SetData/#com.example.client_server_app.models.ChatMessage/PointingToDeclaration/app/com.example.client_server_app.adapters/-recent-conversations-adapter/-conversion-view-holder/-set-data.html
+$dokka.location:com.example.client_server_app.adapters/RecentConversationsAdapter///PointingToDeclaration/app/com.example.client_server_app.adapters/-recent-conversations-adapter/index.html
+$dokka.location:com.example.client_server_app.adapters/RecentConversationsAdapter/RecentConversationsAdapter/#kotlin.collections.List[com.example.client_server_app.models.ChatMessage]#com.example.client_server_app.listeners.ConversionListener/PointingToDeclaration/app/com.example.client_server_app.adapters/-recent-conversations-adapter/-recent-conversations-adapter.html
+$dokka.location:com.example.client_server_app.adapters/RecentConversationsAdapter/getItemCount/#/PointingToDeclaration/app/com.example.client_server_app.adapters/-recent-conversations-adapter/get-item-count.html
+$dokka.location:com.example.client_server_app.adapters/RecentConversationsAdapter/onBindViewHolder/#com.example.client_server_app.adapters.RecentConversationsAdapter.ConversionViewHolder#kotlin.Int/PointingToDeclaration/app/com.example.client_server_app.adapters/-recent-conversations-adapter/on-bind-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/RecentConversationsAdapter/onCreateViewHolder/#android.view.ViewGroup#kotlin.Int/PointingToDeclaration/app/com.example.client_server_app.adapters/-recent-conversations-adapter/on-create-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/UsersAdapter.UserViewHolder///PointingToDeclaration/app/com.example.client_server_app.adapters/-users-adapter/-user-view-holder/index.html
+$dokka.location:com.example.client_server_app.adapters/UsersAdapter.UserViewHolder/SetUserData/#com.example.client_server_app.models.User/PointingToDeclaration/app/com.example.client_server_app.adapters/-users-adapter/-user-view-holder/-set-user-data.html
+$dokka.location:com.example.client_server_app.adapters/UsersAdapter.UserViewHolder/UserViewHolder/#[Error type: Unresolved type for ItemContainerUserBinding]/PointingToDeclaration/app/com.example.client_server_app.adapters/-users-adapter/-user-view-holder/-user-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/UsersAdapter.UserViewHolder/UserViewHolder/#android.view.View/PointingToDeclaration/app/com.example.client_server_app.adapters/-users-adapter/-user-view-holder/-user-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/UsersAdapter///PointingToDeclaration/app/com.example.client_server_app.adapters/-users-adapter/index.html
+$dokka.location:com.example.client_server_app.adapters/UsersAdapter/UsersAdapter/#kotlin.collections.List[com.example.client_server_app.models.User]#com.example.client_server_app.listeners.UserListener/PointingToDeclaration/app/com.example.client_server_app.adapters/-users-adapter/-users-adapter.html
+$dokka.location:com.example.client_server_app.adapters/UsersAdapter/filterList/#java.util.ArrayList[com.example.client_server_app.models.User]/PointingToDeclaration/app/com.example.client_server_app.adapters/-users-adapter/filter-list.html
+$dokka.location:com.example.client_server_app.adapters/UsersAdapter/getItemCount/#/PointingToDeclaration/app/com.example.client_server_app.adapters/-users-adapter/get-item-count.html
+$dokka.location:com.example.client_server_app.adapters/UsersAdapter/onBindViewHolder/#com.example.client_server_app.adapters.UsersAdapter.UserViewHolder#kotlin.Int/PointingToDeclaration/app/com.example.client_server_app.adapters/-users-adapter/on-bind-view-holder.html
+$dokka.location:com.example.client_server_app.adapters/UsersAdapter/onCreateViewHolder/#android.view.ViewGroup#kotlin.Int/PointingToDeclaration/app/com.example.client_server_app.adapters/-users-adapter/on-create-view-holder.html
+$dokka.location:com.example.client_server_app.firebase////PointingToDeclaration/app/com.example.client_server_app.firebase/index.html
+$dokka.location:com.example.client_server_app.firebase/MessagingService///PointingToDeclaration/app/com.example.client_server_app.firebase/-messaging-service/index.html
+$dokka.location:com.example.client_server_app.firebase/MessagingService/MessagingService/#/PointingToDeclaration/app/com.example.client_server_app.firebase/-messaging-service/-messaging-service.html
+$dokka.location:com.example.client_server_app.firebase/MessagingService/onMessageReceived/#com.google.firebase.messaging.RemoteMessage/PointingToDeclaration/app/com.example.client_server_app.firebase/-messaging-service/on-message-received.html
+$dokka.location:com.example.client_server_app.firebase/MessagingService/onNewToken/#kotlin.String/PointingToDeclaration/app/com.example.client_server_app.firebase/-messaging-service/on-new-token.html
+$dokka.location:com.example.client_server_app.listeners////PointingToDeclaration/app/com.example.client_server_app.listeners/index.html
+$dokka.location:com.example.client_server_app.listeners/ConversionListener///PointingToDeclaration/app/com.example.client_server_app.listeners/-conversion-listener/index.html
+$dokka.location:com.example.client_server_app.listeners/ConversionListener/OnConversionClicked/#com.example.client_server_app.models.User/PointingToDeclaration/app/com.example.client_server_app.listeners/-conversion-listener/-on-conversion-clicked.html
+$dokka.location:com.example.client_server_app.listeners/UserListener///PointingToDeclaration/app/com.example.client_server_app.listeners/-user-listener/index.html
+$dokka.location:com.example.client_server_app.listeners/UserListener/OnUserClicked/#com.example.client_server_app.models.User/PointingToDeclaration/app/com.example.client_server_app.listeners/-user-listener/-on-user-clicked.html
+$dokka.location:com.example.client_server_app.models////PointingToDeclaration/app/com.example.client_server_app.models/index.html
+$dokka.location:com.example.client_server_app.models/ChatMessage///PointingToDeclaration/app/com.example.client_server_app.models/-chat-message/index.html
+$dokka.location:com.example.client_server_app.models/ChatMessage/ChatMessage/#/PointingToDeclaration/app/com.example.client_server_app.models/-chat-message/-chat-message.html
+$dokka.location:com.example.client_server_app.models/ChatMessage/conversionId/#/PointingToDeclaration/app/com.example.client_server_app.models/-chat-message/conversion-id.html
+$dokka.location:com.example.client_server_app.models/ChatMessage/conversionImage/#/PointingToDeclaration/app/com.example.client_server_app.models/-chat-message/conversion-image.html
+$dokka.location:com.example.client_server_app.models/ChatMessage/conversionName/#/PointingToDeclaration/app/com.example.client_server_app.models/-chat-message/conversion-name.html
+$dokka.location:com.example.client_server_app.models/ChatMessage/dateObject/#/PointingToDeclaration/app/com.example.client_server_app.models/-chat-message/date-object.html
+$dokka.location:com.example.client_server_app.models/ChatMessage/dateTime/#/PointingToDeclaration/app/com.example.client_server_app.models/-chat-message/date-time.html
+$dokka.location:com.example.client_server_app.models/ChatMessage/message/#/PointingToDeclaration/app/com.example.client_server_app.models/-chat-message/message.html
+$dokka.location:com.example.client_server_app.models/ChatMessage/receiverId/#/PointingToDeclaration/app/com.example.client_server_app.models/-chat-message/receiver-id.html
+$dokka.location:com.example.client_server_app.models/ChatMessage/senderId/#/PointingToDeclaration/app/com.example.client_server_app.models/-chat-message/sender-id.html
+$dokka.location:com.example.client_server_app.models/User///PointingToDeclaration/app/com.example.client_server_app.models/-user/index.html
+$dokka.location:com.example.client_server_app.models/User/User/#/PointingToDeclaration/app/com.example.client_server_app.models/-user/-user.html
+$dokka.location:com.example.client_server_app.models/User/email/#/PointingToDeclaration/app/com.example.client_server_app.models/-user/email.html
+$dokka.location:com.example.client_server_app.models/User/id/#/PointingToDeclaration/app/com.example.client_server_app.models/-user/id.html
+$dokka.location:com.example.client_server_app.models/User/image/#/PointingToDeclaration/app/com.example.client_server_app.models/-user/image.html
+$dokka.location:com.example.client_server_app.models/User/name/#/PointingToDeclaration/app/com.example.client_server_app.models/-user/name.html
+$dokka.location:com.example.client_server_app.models/User/token/#/PointingToDeclaration/app/com.example.client_server_app.models/-user/token.html
+$dokka.location:com.example.client_server_app.network////PointingToDeclaration/app/com.example.client_server_app.network/index.html
+$dokka.location:com.example.client_server_app.network/ApiClient.Companion///PointingToDeclaration/app/com.example.client_server_app.network/-api-client/-companion/index.html
+$dokka.location:com.example.client_server_app.network/ApiClient.Companion/GetClient/#/PointingToDeclaration/app/com.example.client_server_app.network/-api-client/-companion/-get-client.html
+$dokka.location:com.example.client_server_app.network/ApiClient///PointingToDeclaration/app/com.example.client_server_app.network/-api-client/index.html
+$dokka.location:com.example.client_server_app.network/ApiClient/ApiClient/#/PointingToDeclaration/app/com.example.client_server_app.network/-api-client/-api-client.html
+$dokka.location:com.example.client_server_app.network/ApiService///PointingToDeclaration/app/com.example.client_server_app.network/-api-service/index.html
+$dokka.location:com.example.client_server_app.network/ApiService/SendMessage/#java.util.HashMap[kotlin.String,kotlin.String]#kotlin.String/PointingToDeclaration/app/com.example.client_server_app.network/-api-service/-send-message.html
+$dokka.location:com.example.client_server_app.utilities////PointingToDeclaration/app/com.example.client_server_app.utilities/index.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion///PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/index.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_AVAILABILITY/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-a-v-a-i-l-a-b-i-l-i-t-y.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_COLLECTION_CHAT/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-c-o-l-l-e-c-t-i-o-n_-c-h-a-t.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_COLLECTION_CONVERSATIONS/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-c-o-l-l-e-c-t-i-o-n_-c-o-n-v-e-r-s-a-t-i-o-n-s.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_COLLECTION_USERS/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-c-o-l-l-e-c-t-i-o-n_-u-s-e-r-s.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_EMAIL/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-e-m-a-i-l.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_FCM_TOKEN/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-f-c-m_-t-o-k-e-n.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_IMAGE/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-i-m-a-g-e.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_IS_SIGNED_IN/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-i-s_-s-i-g-n-e-d_-i-n.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_LAST_MESSAGE/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-l-a-s-t_-m-e-s-s-a-g-e.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_MESSAGE/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-m-e-s-s-a-g-e.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_NAME/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-n-a-m-e.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_PASSWORD/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-p-a-s-s-w-o-r-d.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_PREFERENCE_NAME/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-p-r-e-f-e-r-e-n-c-e_-n-a-m-e.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_RECEIVER_ID/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-r-e-c-e-i-v-e-r_-i-d.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_RECEIVER_IMAGE/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-r-e-c-e-i-v-e-r_-i-m-a-g-e.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_RECEIVER_NAME/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-r-e-c-e-i-v-e-r_-n-a-m-e.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_SENDER_ID/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-s-e-n-d-e-r_-i-d.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_SENDER_IMAGE/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-s-e-n-d-e-r_-i-m-a-g-e.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_SENDER_NAME/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-s-e-n-d-e-r_-n-a-m-e.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_TIMESTAMP/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-t-i-m-e-s-t-a-m-p.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_USER/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-u-s-e-r.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/KEY_USER_ID/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-k-e-y_-u-s-e-r_-i-d.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/REMOTE_MSG_AUTHORIZATION/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-r-e-m-o-t-e_-m-s-g_-a-u-t-h-o-r-i-z-a-t-i-o-n.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/REMOTE_MSG_CONTENT_TYPE/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-r-e-m-o-t-e_-m-s-g_-c-o-n-t-e-n-t_-t-y-p-e.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/REMOTE_MSG_DATA/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-r-e-m-o-t-e_-m-s-g_-d-a-t-a.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/REMOTE_MSG_REGISTRATION_IDS/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/-r-e-m-o-t-e_-m-s-g_-r-e-g-i-s-t-r-a-t-i-o-n_-i-d-s.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/getRemoteMsgHeaders/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/get-remote-msg-headers.html
+$dokka.location:com.example.client_server_app.utilities/Constants.Companion/remoteMessageHeaders/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-companion/remote-message-headers.html
+$dokka.location:com.example.client_server_app.utilities/Constants///PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/index.html
+$dokka.location:com.example.client_server_app.utilities/Constants/Constants/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-constants/-constants.html
+$dokka.location:com.example.client_server_app.utilities/PreferenceManager///PointingToDeclaration/app/com.example.client_server_app.utilities/-preference-manager/index.html
+$dokka.location:com.example.client_server_app.utilities/PreferenceManager/Clear/#/PointingToDeclaration/app/com.example.client_server_app.utilities/-preference-manager/-clear.html
+$dokka.location:com.example.client_server_app.utilities/PreferenceManager/GetBoolean/#kotlin.String/PointingToDeclaration/app/com.example.client_server_app.utilities/-preference-manager/-get-boolean.html
+$dokka.location:com.example.client_server_app.utilities/PreferenceManager/PreferenceManager/#android.content.Context/PointingToDeclaration/app/com.example.client_server_app.utilities/-preference-manager/-preference-manager.html
+$dokka.location:com.example.client_server_app.utilities/PreferenceManager/PutBoolean/#kotlin.String#kotlin.Boolean/PointingToDeclaration/app/com.example.client_server_app.utilities/-preference-manager/-put-boolean.html
+$dokka.location:com.example.client_server_app.utilities/PreferenceManager/PutString/#kotlin.String#kotlin.String?/PointingToDeclaration/app/com.example.client_server_app.utilities/-preference-manager/-put-string.html
+$dokka.location:com.example.client_server_app.utilities/PreferenceManager/getString/#kotlin.String/PointingToDeclaration/app/com.example.client_server_app.utilities/-preference-manager/get-string.html
+com.example.client_server_app.activities
+com.example.client_server_app.adapters
+com.example.client_server_app.firebase
+com.example.client_server_app.listeners
+com.example.client_server_app.models
+com.example.client_server_app.network
+com.example.client_server_app.utilities
+
