@@ -141,6 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Desktop Navigation */
 .nav-menu {
   margin-top: 35px;
+  border-radius: 20px;
 }
 
 .nav-menu ul {
@@ -276,7 +277,11 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: #09203a;
+  background: rgba(9, 32, 58);
+  border-radius: 20px;
+  width: 75%;
+  margin: auto;
+  margin-top: 10px;
 }
 
 #header.header-top .social-links, #header.header-top h2 {
@@ -329,6 +334,7 @@ section.section-show {
 section .container {
   background: rgba(0, 0, 0, 0);
   padding: 30px;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -374,6 +380,7 @@ section .container {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
