@@ -1,4 +1,3 @@
-/* General Styles */
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -16,7 +15,6 @@ a:hover {
   color: #0f9c39;
 }
 
-/* Header Styles */
 #header {
   background: #121212;
   padding: 20px 0;
@@ -38,7 +36,6 @@ a:hover {
   color: #fff;
 }
 
-/* Navigation Menu */
 .nav-menu ul {
   list-style: none;
   margin: 0;
@@ -65,11 +62,10 @@ a:hover {
   color: #12d640;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .nav-menu ul {
     flex-direction: column;
-    display: none; /* Başlangıçta gizli */
+    display: none; 
     background: #121212;
     position: absolute;
     top: 100%;
@@ -84,10 +80,9 @@ a:hover {
   }
 
   .nav-menu ul.show {
-    display: flex; /* Tıklandığında görünür */
+    display: flex;
   }
 
-  /* Hamburger Icon */
   .hamburger {
     display: block;
     position: absolute;
@@ -97,7 +92,7 @@ a:hover {
     font-size: 24px;
     color: #fff;
   }
-
+  
   .hamburger span {
     display: block;
     width: 25px;
@@ -105,43 +100,28 @@ a:hover {
     margin: 5px auto;
     background: #fff;
     border-radius: 2px;
-    transition: all 0.3s;
   }
 
-  .hamburger.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
 
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
 }
 
-
-
-/* Hero Section */
-#hero {
+#my-info {
   padding: 100px 20px;
   text-align: center;
-  background: url('assets/img/hero-bg.jpg') no-repeat center center/cover;
   color: #fff;
 }
 
-#hero h1 {
+#my-info h1 {
   font-size: 48px;
   margin-bottom: 20px;
 }
 
-#hero p {
+#my-info p {
   font-size: 18px;
   margin-bottom: 30px;
 }
 
-.cta-button {
+.message-button {
   padding: 10px 20px;
   background-color: #12d640;
   color: #fff;
@@ -153,11 +133,10 @@ a:hover {
   transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.message-button:hover {
   background-color: #0f9c39;
 }
 
-/* About Section */
 #about {
   padding: 40px 20px;
   text-align: center;
@@ -225,7 +204,6 @@ a:hover {
   background-color: #0f9c39;
 }
 
-/* Contact Section */
 #contact {
   padding: 40px 20px;
   text-align: center;
@@ -253,12 +231,6 @@ a:hover {
   text-align: center;
 }
 
-.contact-card .icon {
-  font-size: 40px;
-  color: #12d640;
-  margin-bottom: 10px;
-}
-
 .contact-card h3 {
   font-size: 20px;
   color: #12d640;
@@ -270,30 +242,6 @@ a:hover {
   margin-bottom: 5px;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.social-links a {
-  font-size: 20px;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  transition: background 0.3s ease;
-}
-
-.social-links a:hover {
-  background: #12d640;
-  color: #fff;
-}
-
-/* Education Section */
 #education {
   padding: 40px 20px;
   text-align: center;
@@ -338,7 +286,6 @@ a:hover {
   margin-bottom: 10px;
 }
 
-/* Experience Section */
 #experience {
   padding: 40px 20px;
   text-align: center;
@@ -387,7 +334,6 @@ a:hover {
   margin-bottom: 5px;
 }
 
-/* Projects Section */
 #projects {
   padding: 40px 20px;
   text-align: center;
@@ -472,11 +418,11 @@ button:hover {
 
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #my-info h1 {
     font-size: 36px;
   }
 
-  .cta-button {
+  .message-button {
     font-size: 14px;
     padding: 8px 15px;
   }
@@ -487,8 +433,7 @@ button:hover {
     max-width: 100%;
   }
 }
-/* Form Section Styles */
-/* Form Section Styles */
+
 #contact-form {
   padding: 40px 20px;
   text-align: center;
@@ -506,7 +451,7 @@ form {
   max-width: 600px;
   margin: 0 auto;
   background: #1a1a1a;
-  padding: 30px; /* Form iç kenar boşluğunu artırdık */
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -522,7 +467,7 @@ label {
   color: #12d640;
   margin-bottom: 5px;
   font-weight: bold;
-  padding-left: 5px; /* Label için solda boşluk ekledik */
+  padding-left: 5px; 
 }
 
 input,
@@ -534,8 +479,7 @@ textarea {
   border-radius: 5px;
   background: #2a2a2a;
   color: #fff;
-  transition: border-color 0.3s ease, background 0.3s ease;
-  box-sizing: border-box; /* Giriş alanlarının tam genişlikte görünmesini sağlar */
+  box-sizing: border-box;
 }
 
 input:focus,
@@ -550,7 +494,7 @@ textarea {
   height: 120px;
 }
 
-button.cta-button {
+button.message-button {
   width: 100%;
   padding: 12px;
   font-size: 16px;
@@ -560,22 +504,21 @@ button.cta-button {
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
-  transition: background 0.3s ease;
 }
 
-button.cta-button:hover {
+button.message-button:hover {
   background: #0f9c39;
 }
 
 .feedback {
   margin-top: 10px;
   font-size: 14px;
-  color: #ff4d4d; /* Hata mesajları için */
+  color: #ff4d4d; 
 }
 
 #live-date-time {
-  min-height: 30px; /* Yer belirlemek için yükseklik */
-  text-align: center; /* Metni ortalamak için */
-  font-size: 18px; /* Yazı boyutu */
-  color: #fff; /* Metin rengi */
+  min-height: 30px; 
+  text-align: center; 
+  font-size: 18px; 
+  color: #fff; 
 }

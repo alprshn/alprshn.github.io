@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Read More Button
   const readMoreBtn = document.getElementById("read-more-btn");
   const dots = document.getElementById("dots");
   const moreText = document.getElementById("more");
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Live Date and Time
   function updateDateTime() {
     const dateTimeElement = document.getElementById("live-date-time");
     const now = new Date();
@@ -39,18 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   setInterval(updateDateTime, 1000);
 
-  // Hamburger Menu
   const hamburger = document.getElementById("hamburger");
   const menuList = document.getElementById("menu-list");
-
+  
   if (hamburger && menuList) {
     hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
       menuList.classList.toggle("show");
     });
   }
 
-  // Contact Form Validation
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
@@ -78,7 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Projects Filter
   const allProjectsBtn = document.getElementById("all-projects-btn");
   const favoriteProjectsBtn = document.getElementById("favorite-projects-btn");
   const projectCards = document.querySelectorAll(".project-card");
