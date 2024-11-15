@@ -471,7 +471,6 @@ button:hover {
 
 
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 36px;
@@ -488,6 +487,7 @@ button:hover {
     max-width: 100%;
   }
 }
+/* Form Section Styles */
 /* Form Section Styles */
 #contact-form {
   padding: 40px 20px;
@@ -506,7 +506,7 @@ form {
   max-width: 600px;
   margin: 0 auto;
   background: #1a1a1a;
-  padding: 20px 30px;
+  padding: 30px; /* Form iç kenar boşluğunu artırdık */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -522,6 +522,7 @@ label {
   color: #12d640;
   margin-bottom: 5px;
   font-weight: bold;
+  padding-left: 5px; /* Label için solda boşluk ekledik */
 }
 
 input,
@@ -534,6 +535,7 @@ textarea {
   background: #2a2a2a;
   color: #fff;
   transition: border-color 0.3s ease, background 0.3s ease;
+  box-sizing: border-box; /* Giriş alanlarının tam genişlikte görünmesini sağlar */
 }
 
 input:focus,
