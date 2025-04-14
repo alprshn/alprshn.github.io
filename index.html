@@ -1,67 +1,897 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Alper Şahin</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Alper Şahin - Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --dark-color: #333333;
+      --light-color: #ffffff;
+      --background-color: #ffffff;
+      --secondary-color: #86868b;
+      --accent-color: #0071e3;
+      --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --border-radius: 16px;
+      --gap: 18px;
+      --transition: all 0.3s ease;
+      
+      /* Card Colors */
+      --card-bg: #ffffff;
+      --instagram-accent: #e1306c;
+      --spotify-accent: #1DB954;
+      --github-accent: #24292e;
+      --twitter-accent: #1DA1F2;
+      --linkedin-accent: #0077B5;
+      --email-accent: #D44638;
+      --bluesky-accent: #0085FF;
+      
+      /* Android & Kotlin Colors */
+      --kotlin-color: #7F52FF;
+      --kotlin-dark: #37474F;
+      --kotlin-light: #B69BFF;
+      --android-color: #3DDC84;
+      --android-dark: #00A573;
+      --android-light: #8FFFBC;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    @keyframes gradientBackground {
+      0% {
+        background-position: 0% 0%;
+      }
+      25% {
+        background-position: 100% 0%;
+      }
+      50% {
+        background-position: 100% 100%;
+      }
+      75% {
+        background-position: 0% 100%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    @keyframes floatingIcons {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.1;
+      }
+      50% {
+        transform: translateY(-15px) rotate(180deg);
+        opacity: 0.3;
+      }
+      100% {
+        transform: translateY(0) rotate(360deg);
+        opacity: 0.1;
+      }
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--dark-color);
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        -45deg, 
+        rgba(127, 82, 255, 0.04),
+        rgba(182, 155, 255, 0.06),
+        rgba(61, 220, 132, 0.05),
+        rgba(143, 255, 188, 0.07)
+      );
+      background-size: 400% 400%;
+      z-index: -1;
+      animation: gradientBackground 15s ease infinite;
+    }
+
+    .bg-android-icon {
+      position: fixed;
+      width: 80px;
+      height: 80px;
+      background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    .bg-kotlin-icon {
+      position: fixed;
+      width: 80px;
+      height: 80px;
+      background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+      background-image: 
+        radial-gradient(circle at 20% 30%, rgba(127, 82, 255, 0.05) 0%, transparent 10%),
+        radial-gradient(circle at 80% 20%, rgba(61, 220, 132, 0.05) 0%, transparent 15%),
+        radial-gradient(circle at 40% 70%, rgba(127, 82, 255, 0.05) 0%, transparent 12%),
+        radial-gradient(circle at 70% 60%, rgba(61, 220, 132, 0.05) 0%, transparent 10%);
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: slideUp 0.8s ease forwards 0.3s;
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .profile-image {
+      width: 120px;
+      height: 120px;
+      border-radius: var(--border-radius);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-info h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--dark-color);
+    }
+
+    .profile-info p {
+      font-size: 1.1rem;
+      color: var(--secondary-color);
+      margin-bottom: 0.5rem;
+      font-weight: 400;
+    }
+
+    .location {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--secondary-color);
+      font-size: 0.9rem;
+    }
+
+    .location i {
+      color: var(--accent-color);
+    }
+
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--gap);
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+
+    .bento-box {
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+      transition: var(--transition);
+      opacity: 0;
+      transform: translateY(30px);
+      position: relative;
+    }
+
+    .bento-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(125deg, 
+        rgba(255, 255, 255, 0.3) 0%, 
+        rgba(255, 255, 255, 0.1) 40%, 
+        rgba(255, 255, 255, 0.1) 60%, 
+        rgba(255, 255, 255, 0.3) 100%);
+      opacity: 0.2;
+      z-index: 1;
+      pointer-events: none;
+      transition: all 0.5s ease;
+      background-size: 200% 200%;
+      animation: subtleWave 8s ease-in-out infinite;
+    }
+
+    .bento-box:hover::before {
+      opacity: 0.5;
+      animation: waveEffect 3s ease-in-out infinite;
+    }
+
+    @keyframes waveEffect {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes subtleWave {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .bento-box::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+      opacity: 0;
+      transition: opacity 1.5s ease;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .bento-box:hover::after {
+      animation: shimmer 2s infinite;
+      opacity: 1;
+    }
+
+    .instagram-box {
+      animation: slideUp 0.6s ease forwards 0.4s;
+    }
+
+    .spotify-box {
+      animation: slideUp 0.6s ease forwards 0.5s;
+    }
+
+    .github-box {
+      animation: slideUp 0.6s ease forwards 0.6s;
+    }
+
+    .twitter-box {
+      animation: slideUp 0.6s ease forwards 0.7s;
+    }
+
+    .linkedin-box {
+      animation: slideUp 0.6s ease forwards 0.8s;
+    }
+
+    .email-box {
+      animation: slideUp 0.6s ease forwards 0.9s;
+    }
+
+    .bluesky-box {
+      animation: slideUp 0.6s ease forwards 1s;
+    }
+
+    .bento-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .instagram-box:hover {
+      box-shadow: 0 0 25px rgba(225, 48, 108, 0.6);
+    }
+
+    .spotify-box:hover {
+      box-shadow: 0 0 25px rgba(29, 185, 84, 0.6);
+    }
+
+    .github-box:hover {
+      box-shadow: 0 0 25px rgba(36, 41, 46, 0.6);
+    }
+
+    .twitter-box:hover {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .linkedin-box:hover {
+      box-shadow: 0 0 25px rgba(0, 119, 181, 0.6);
+    }
+
+    .email-box:hover {
+      box-shadow: 0 0 25px rgba(212, 70, 56, 0.6);
+    }
+
+    .bluesky-box:hover {
+      box-shadow: 0 0 25px rgba(0, 133, 255, 0.6);
+    }
+
+    .bento-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .social-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.8rem;
+      gap: 0.8rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .social-box:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: var(--accent-color);
+      z-index: 2;
+    }
+
+    .social-box .bg-pattern {
+      display: none;
+    }
+
+    .social-box .content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .social-box img {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 0.5rem;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .social-box:hover img {
+      transform: scale(1.15);
+    }
+
+    .social-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+      color: var(--dark-color);
+      font-weight: 500;
+    }
+
+    .social-box p {
+      font-size: 0.9rem;
+      color: var(--secondary-color);
+    }
+
+    .social-box a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Platform-specific top borders */
+    .instagram-box:before {
+      background-color: var(--instagram-accent);
+    }
+    .instagram-box .bg-pattern {
+      color: var(--instagram-accent);
+    }
+
+    .spotify-box:before {
+      background-color: var(--spotify-accent);
+    }
+    .spotify-box .bg-pattern {
+      color: var(--spotify-accent);
+    }
+
+    .github-box:before {
+      background-color: var(--github-accent);
+    }
+    .github-box .bg-pattern {
+      color: var(--github-accent);
+    }
+
+    .twitter-box:before {
+      background: linear-gradient(125deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.1) 40%,
+        rgba(0, 0, 0, 0.1) 60%,
+        rgba(0, 0, 0, 0.2) 100%);
+      opacity: 0.4;
+    }
+    .twitter-box .bg-pattern {
+      opacity: 0.15;
+      color: #000000;
+    }
+
+    .linkedin-box:before {
+      background-color: var(--linkedin-accent);
+    }
+    .linkedin-box .bg-pattern {
+      color: var(--linkedin-accent);
+    }
+
+    .email-box:before {
+      background-color: var(--email-accent);
+    }
+    .email-box .bg-pattern {
+      color: var(--email-accent);
+    }
+
+    .bluesky-box:before {
+      background-color: var(--bluesky-accent);
+    }
+    .bluesky-box .bg-pattern {
+      color: var(--bluesky-accent);
+    }
+
+    .footer {
+      margin-top: 2rem;
+      padding: 2rem;
+      text-align: center;
+      color: var(--secondary-color);
+      font-size: 0.9rem;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards 1.5s;
+      position: relative;
+    }
+
+    .footer:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 3px;
+      background-color: var(--accent-color);
+      border-radius: 3px;
+    }
+
+    .footer p {
+      margin-bottom: 1rem;
+    }
+
+    .footer .tech-stack {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer .tech-tag {
+      background-color: rgba(0, 113, 227, 0.1);
+      color: var(--accent-color);
+      border-radius: 20px;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    @media (min-width: 768px) {
+      .bento-grid {
+        grid-template-columns: repeat(12, 1fr);
+      }
+
+      .profile {
+        flex-wrap: nowrap;
+      }
+
+      .instagram-box {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+      }
+
+      .spotify-box {
+        grid-column: 4 / span 3;
+        grid-row: 1 / span 2;
+      }
+
+      .github-box {
+        grid-column: 7 / span 3;
+        grid-row: 1 / span 2;
+      }
+
+      .twitter-box {
+        grid-column: 10 / span 3;
+        grid-row: 1 / span 1;
+      }
+
+      .linkedin-box {
+        grid-column: 10 / span 3;
+        grid-row: 2 / span 1;
+      }
+
+      .email-box {
+        grid-column: 1 / span 6;
+        grid-row: 3 / span 1;
+      }
+
+      .bluesky-box {
+        grid-column: 7 / span 6;
+        grid-row: 3 / span 1;
+      }
+    }
+
+    @media (max-width: 767px) {
+      body {
+        padding: 1rem;
+      }
+      
+      .bento-grid {
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      .instagram-box {
+        grid-column: 1 / span 3;
+      }
+
+      .spotify-box {
+        grid-column: 4 / span 3;
+      }
+
+      .github-box {
+        grid-column: 1 / span 3;
+      }
+
+      .twitter-box {
+        grid-column: 4 / span 3;
+      }
+
+      .linkedin-box {
+        grid-column: 1 / span 3;
+      }
+
+      .email-box {
+        grid-column: 4 / span 3;
+      }
+
+      .bluesky-box {
+        grid-column: 1 / span 6;
+      }
+    }
+
+    .social-box .liquid-gradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.3) 100%);
+      opacity: 0.2;
+      transition: opacity 0.5s ease;
+      z-index: 1;
+      pointer-events: none;
+      filter: blur(10px);
+    }
+
+    .social-box:hover .liquid-gradient {
+      opacity: 0.6;
+      animation: liquidMove 5s ease-in-out infinite;
+    }
+
+    @keyframes liquidMove {
+      0% {
+        transform: translateX(-25%) translateY(-25%) scale(1.5);
+      }
+      25% {
+        transform: translateX(25%) translateY(-15%) scale(1.3);
+      }
+      50% {
+        transform: translateX(15%) translateY(25%) scale(1.5);
+      }
+      75% {
+        transform: translateX(-15%) translateY(15%) scale(1.3);
+      }
+      100% {
+        transform: translateX(-25%) translateY(-25%) scale(1.5);
+      }
+    }
+
+    /* Instagram specific water effect */
+    .instagram-box::before {
+      background: linear-gradient(125deg,
+        rgba(225, 48, 108, 0.2) 0%,
+        rgba(225, 48, 108, 0.1) 40%,
+        rgba(225, 48, 108, 0.1) 60%,
+        rgba(225, 48, 108, 0.2) 100%);
+      opacity: 0.4;
+    }
+
+    /* Spotify specific water effect */
+    .spotify-box::before {
+      background: linear-gradient(125deg,
+        rgba(29, 185, 84, 0.2) 0%,
+        rgba(29, 185, 84, 0.1) 40%,
+        rgba(29, 185, 84, 0.1) 60%,
+        rgba(29, 185, 84, 0.2) 100%);
+      opacity: 0.4;
+    }
+
+    /* GitHub specific water effect */
+    .github-box::before {
+      background: linear-gradient(125deg,
+        rgba(36, 41, 46, 0.2) 0%,
+        rgba(36, 41, 46, 0.1) 40%,
+        rgba(36, 41, 46, 0.1) 60%,
+        rgba(36, 41, 46, 0.2) 100%);
+      opacity: 0.4;
+    }
+
+    /* Twitter/X specific water effect */
+    .twitter-box::before {
+      background: linear-gradient(125deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.1) 40%,
+        rgba(0, 0, 0, 0.1) 60%,
+        rgba(0, 0, 0, 0.2) 100%);
+      opacity: 0.4;
+    }
+
+    /* LinkedIn specific water effect */
+    .linkedin-box::before {
+      background: linear-gradient(125deg,
+        rgba(0, 119, 181, 0.2) 0%,
+        rgba(0, 119, 181, 0.1) 40%,
+        rgba(0, 119, 181, 0.1) 60%,
+        rgba(0, 119, 181, 0.2) 100%);
+      opacity: 0.4;
+    }
+
+    /* Email specific water effect */
+    .email-box::before {
+      background: linear-gradient(125deg,
+        rgba(212, 70, 56, 0.2) 0%,
+        rgba(212, 70, 56, 0.1) 40%,
+        rgba(212, 70, 56, 0.1) 60%,
+        rgba(212, 70, 56, 0.2) 100%);
+      opacity: 0.4;
+    }
+
+    /* Bluesky specific water effect */
+    .bluesky-box::before {
+      background: linear-gradient(125deg,
+        rgba(0, 133, 255, 0.2) 0%,
+        rgba(0, 133, 255, 0.1) 40%,
+        rgba(0, 133, 255, 0.1) 60%,
+        rgba(0, 133, 255, 0.2) 100%);
+      opacity: 0.4;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -200% 0;
+      }
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    @keyframes floatingRandomIcons {
+      0% {
+        transform: translate(calc(var(--random-start-x) * 1vw), calc(var(--random-start-y) * 1vh)) rotate(0deg);
+        opacity: 0.15;
+      }
+      25% {
+        transform: translate(calc(var(--random-x) * 1vw), calc(var(--random-y) * 1vh)) rotate(90deg);
+        opacity: 0.25;
+      }
+      50% {
+        transform: translate(calc(var(--random-x2) * 1vw), calc(var(--random-y2) * 1vh)) rotate(180deg);
+        opacity: 0.15;
+      }
+      75% {
+        transform: translate(calc(var(--random-x3) * 1vw), calc(var(--random-y3) * 1vh)) rotate(270deg);
+        opacity: 0.25;
+      }
+      100% {
+        transform: translate(calc(var(--random-end-x) * 1vw), calc(var(--random-end-y) * 1vh)) rotate(360deg);
+        opacity: 0.15;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <header id="header">
-    <div class="container">
-      <h1><a href="index.html">Alper Şahin</a></h1>
-      <h2 id="live-date-time"></h2>
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="nav-menu">
-        <ul id="menu-list">
-          <li><a href="index.html" class="active">Ana Sayfa</a></li>
-          <li><a href="about.html">Hakkımda</a></li>
-          <li><a href="education.html">Eğitim</a></li>
-          <li><a href="experience.html">Deneyim</a></li>
-          <li><a href="projects.html">Projeler</a></li>
-          <li><a href="contact.html">İletişim</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- Top section icons -->
+  <div class="bg-android-icon" style="top: 10%; left: 5%; --random-start-x: 5; --random-start-y: 10; --random-x: 20; --random-y: 25; --random-x2: 15; --random-y2: -20; --random-x3: -15; --random-y3: 18; --random-end-x: -10; --random-end-y: 15; animation: floatingRandomIcons 35s infinite ease-in-out;"></div>
+  <div class="bg-kotlin-icon" style="top: 20%; left: 85%; --random-start-x: -10; --random-start-y: -5; --random-x: -25; --random-y: 20; --random-x2: -12; --random-y2: -15; --random-x3: 18; --random-y3: -22; --random-end-x: 15; --random-end-y: -12; animation: floatingRandomIcons 40s infinite ease-in-out;"></div>
+  <div class="bg-android-icon" style="top: 15%; left: 40%; --random-start-x: 12; --random-start-y: -8; --random-x: -15; --random-y: 12; --random-x2: 8; --random-y2: -18; --random-x3: -10; --random-y3: 15; --random-end-x: 5; --random-end-y: -10; animation: floatingRandomIcons 39s infinite ease-in-out 1.1s;"></div>
 
-  <section id="my-info">
-    <div class="container">
-      <h1>Portföyüme Hoş Geldiniz</h1>
+  <!-- Middle section icons -->
+  <div class="bg-android-icon" style="top: 40%; left: 45%; --random-start-x: -8; --random-start-y: 12; --random-x: 18; --random-y: 25; --random-x2: -20; --random-y2: 18; --random-x3: 15; --random-y3: -25; --random-end-x: -15; --random-end-y: -18; animation: floatingRandomIcons 42s infinite ease-in-out 0.5s;"></div>
+  <div class="bg-kotlin-icon" style="top: 60%; left: 15%; --random-start-x: 12; --random-start-y: -15; --random-x: 25; --random-y: -22; --random-x2: 10; --random-y2: 25; --random-x3: -20; --random-y3: -15; --random-end-x: -5; --random-end-y: 22; animation: floatingRandomIcons 38s infinite ease-in-out 1s;"></div>
+  
+  <!-- Bottom section icons -->
+  <div class="bg-android-icon" style="top: 75%; left: 80%; --random-start-x: 15; --random-start-y: -10; --random-x: -22; --random-y: -18; --random-x2: -28; --random-y2: 15; --random-x3: 22; --random-y3: -13; --random-end-x: 8; --random-end-y: 20; animation: floatingRandomIcons 45s infinite ease-in-out 2s;"></div>
+  <div class="bg-kotlin-icon" style="top: 85%; left: 40%; --random-start-x: -18; --random-start-y: 8; --random-x: -18; --random-y: -25; --random-x2: 22; --random-y2: -15; --random-x3: -25; --random-y3: 18; --random-end-x: 12; --random-end-y: -20; animation: floatingRandomIcons 37s infinite ease-in-out 3s;"></div>
+  
+  <!-- Corner icons -->
+  <div class="bg-android-icon" style="top: 5%; left: 95%; --random-start-x: -15; --random-start-y: -8; --random-x: -30; --random-y: 25; --random-x2: -20; --random-y2: 5; --random-x3: -15; --random-y3: 30; --random-end-x: -25; --random-end-y: -15; animation: floatingRandomIcons 46s infinite ease-in-out 0.3s;"></div>
+  <div class="bg-kotlin-icon" style="top: 95%; left: 5%; --random-start-x: 10; --random-start-y: -15; --random-x: 25; --random-y: -30; --random-x2: 5; --random-y2: -15; --random-x3: 30; --random-y3: -20; --random-end-x: 18; --random-end-y: -28; animation: floatingRandomIcons 43s infinite ease-in-out 1.9s;"></div>
+  
+  <!-- Edge icons -->
+  <div class="bg-android-icon" style="top: 5%; left: 30%; --random-start-x: 8; --random-start-y: 15; --random-x: -12; --random-y: 20; --random-x2: 15; --random-y2: 8; --random-x3: -18; --random-y3: 12; --random-end-x: 10; --random-end-y: 18; animation: floatingRandomIcons 37s infinite ease-in-out 0.7s;"></div>
+  <div class="bg-kotlin-icon" style="top: 5%; left: 65%; --random-start-x: -12; --random-start-y: 10; --random-x: 15; --random-y: 18; --random-x2: -8; --random-y2: 22; --random-x3: 12; --random-y3: 8; --random-end-x: -10; --random-end-y: 15; animation: floatingRandomIcons 44s infinite ease-in-out 1.3s;"></div>
+  <div class="bg-android-icon" style="top: 95%; left: 35%; --random-start-x: 15; --random-start-y: -12; --random-x: -8; --random-y: -20; --random-x2: 12; --random-y2: -15; --random-x3: -15; --random-y3: -8; --random-end-x: 8; --random-end-y: -18; animation: floatingRandomIcons 40s infinite ease-in-out 2.2s;"></div>
+  <div class="bg-kotlin-icon" style="top: 95%; left: 70%; --random-start-x: -10; --random-start-y: -15; --random-x: 18; --random-y: -12; --random-x2: -15; --random-y2: -8; --random-x3: 10; --random-y3: -20; --random-end-x: -12; --random-end-y: -10; animation: floatingRandomIcons 36s infinite ease-in-out 2.9s;"></div>
+  <div class="bg-android-icon" style="top: 30%; left: 98%; --random-start-x: -20; --random-start-y: -5; --random-x: -15; --random-y: 12; --random-x2: -25; --random-y2: -8; --random-x3: -18; --random-y3: 15; --random-end-x: -22; --random-end-y: -10; animation: floatingRandomIcons 41s infinite ease-in-out 1.5s;"></div>
+  <div class="bg-kotlin-icon" style="top: 70%; left: 98%; --random-start-x: -15; --random-start-y: 8; --random-x: -22; --random-y: -12; --random-x2: -10; --random-y2: 15; --random-x3: -25; --random-y3: -5; --random-end-x: -18; --random-end-y: 10; animation: floatingRandomIcons 39s infinite ease-in-out 0.9s;"></div>
+  <div class="bg-android-icon" style="top: 50%; left: 2%; --random-start-x: 18; --random-start-y: 10; --random-x: 25; --random-y: -8; --random-x2: 15; --random-y2: 12; --random-x3: 22; --random-y3: -15; --random-end-x: 20; --random-end-y: 5; animation: floatingRandomIcons 38s infinite ease-in-out 1.7s;"></div>
+
+  <div class="profile">
+    <div class="profile-image">
+      <img src="assets/logo.png" alt="Logo">
+    </div>
+    <div class="profile-info">
+      <h1>Alper Şahin</h1>
       <p>Android Developer</p>
-      <a href="projects.html" class="message-button">Projelerimi Görüntüle</a>
+      <div class="location">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Istanbul, Turkiye</span>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section id="contact-form">
-    <div class="container">
-      <h2>Bana Ulaşın</h2>
-      <form id="contactForm">
-        <div class="form-group">
-          <label for="name">Ad:</label>
-          <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
-        </div>
-        <div class="form-group">
-          <label for="email">E-posta:</label>
-          <input type="email" id="email" name="email" placeholder="E-postanızı girin" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Mesaj:</label>
-          <textarea id="message" name="message" rows="5" placeholder="Mesajınızı girin" required></textarea>
-        </div>
-        <button type="submit" class="message-button">Mesaj Gönder</button>
-        <p id="formFeedback" class="feedback"></p>
-      </form>
+  <div class="bento-grid">
+    <a href="https://www.instagram.com/alprshn0/" target="_blank" class="bento-box social-box instagram-box">
+      <div class="bg-pattern"></div>
+      <div class="liquid-gradient"></div>
+      <div class="content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png" alt="Instagram">
+        <h3>Instagram</h3>
+        <p>@alprshn0</p>
+      </div>
+    </a>
+
+    <a href="https://open.spotify.com/user/2706aemnhij8piduuslx88gao?si=193f6767cdc94eb6" target="_blank" class="bento-box social-box spotify-box">
+      <div class="bg-pattern"></div>
+      <div class="liquid-gradient"></div>
+      <div class="content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/168px-Spotify_logo_without_text.svg.png" alt="Spotify">
+        <h3>Spotify</h3>
+        <p>Listen what I listen</p>
+      </div>
+    </a>
+
+    <a href="https://github.com/alprshn" target="_blank" class="bento-box social-box github-box">
+      <div class="bg-pattern"></div>
+      <div class="liquid-gradient"></div>
+      <div class="content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/240px-Octicons-mark-github.svg.png" alt="GitHub">
+        <h3>GitHub</h3>
+        <p>@alprshn</p>
+      </div>
+    </a>
+
+    <a href="https://x.com/alpr_shn" target="_blank" class="bento-box social-box twitter-box">
+      <div class="bg-pattern"></div>
+      <div class="liquid-gradient"></div>
+      <div class="content">
+        <img src="https://logos-world.net/wp-content/uploads/2023/08/X-Logo.png" alt="X">
+        <h3>X</h3>
+        <p>@alpr_shn</p>
+      </div>
+    </a>
+
+    <a href="https://www.linkedin.com/in/sahin-alper/" target="_blank" class="bento-box social-box linkedin-box">
+      <div class="bg-pattern"></div>
+      <div class="liquid-gradient"></div>
+      <div class="content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png" alt="LinkedIn">
+        <h3>LinkedIn</h3>
+        <p>sahin-alper</p>
+      </div>
+    </a>
+
+    <a href="mailto:dev.alprshn@gmail.com" class="bento-box social-box email-box">
+      <div class="bg-pattern"></div>
+      <div class="liquid-gradient"></div>
+      <div class="content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/240px-Gmail_icon_%282020%29.svg.png" alt="Email">
+        <h3>Email</h3>
+        <p>dev.alprshn@gmail.com</p>
+      </div>
+    </a>
+
+    <a href="https://bsky.app/profile/alprshn.bsky.social" target="_blank" class="bento-box social-box bluesky-box">
+      <div class="bg-pattern"></div>
+      <div class="liquid-gradient"></div>
+      <div class="content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg" alt="Bluesky">
+        <h3>Bluesky</h3>
+        <p>@alprshn.bsky.social</p>
+      </div>
+    </a>
+  </div>
+  
+  <div class="footer">
+    <p>© 2025 Alper Şahin. All rights reserved.</p>
+    <p>I am an Android fan and Apple UI fan.</p>
+    <div class="tech-stack">
+      <span class="tech-tag">Kotlin</span>
+      <span class="tech-tag">Android</span>
+      <span class="tech-tag">Jetpack Compose</span>
+      <span class="tech-tag">UI/UX</span>
     </div>
-  </section>
-
-  <script src="assets/js/main.js"></script>
+  </div>
 </body>
-
 </html>
